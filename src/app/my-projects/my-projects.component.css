@@ -1,0 +1,47 @@
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+th {
+    width: 15%;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+td>button {
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    table {
+        width: 100%;
+    }
+
+    th {
+        max-width: 50%;
+        padding-left: 1%;
+        padding-right: 1em;
+        overflow: auto;
+    }
+
+    td {
+        /* max-width: 20%; */
+        overflow: auto;
+    }
+}

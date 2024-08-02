@@ -7,6 +7,10 @@
     overflow: auto;
 }
 
+#linkedin {
+    color: #0077B5;
+}
+
 #about-card>img {
     width: 100%;
     height: auto;

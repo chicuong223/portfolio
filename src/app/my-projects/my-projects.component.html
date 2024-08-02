@@ -1,1 +1,40 @@
-<p>my-projects works!</p>
+<div class="wrapper">
+    <h1>My projects</h1>
+    <div class="projects mt-4">
+        <div *ngFor="let pro of projects" class="mt-auto mb-5">
+            <h4 class="text-success">{{pro.name}}</h4>
+            <p class="text-secondary fst-italic fw-bold">({{pro.projectTime}})</p>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <td>{{pro.description}}</td>
+                </tr>
+                <tr>
+                    <th>My responsibilities</th>
+                    <td>
+                        <ul ngClass="'no-bullet': pro.responsibilities.length <= 1">
+                            <li *ngFor="let res of pro.responsibilities">
+                                <p>{{res}}</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tech stack</th>
+                    <td>
+                        <button *ngFor="let tech of pro.techStack"
+                            class="btn btn-primary ms-auto me-2 mt-auto mb-2">{{tech}}</button>
+                    </td>
+                </tr>
+                <tr *ngIf="pro.repositoryUrl">
+                    <th>Repository</th>
+                    <td><a href="{{pro.repositoryUrl}}">{{pro.repositoryUrl}}</a></td>
+                </tr>
+                <tr *ngIf="pro.documentUrl">
+                    <th>Project document</th>
+                    <td><a href="{{pro.documentUrl}}">{{pro.documentUrl}}</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
