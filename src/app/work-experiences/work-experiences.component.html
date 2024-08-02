@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <h1>Work Experiences</h1>
+    <div id="experiences" class="mt-4">
+        <div *ngFor="let exp of workExperiences" class="mb-4">
+            <h3 class="text-primary">{{exp.company}} <span class="text-dark fs-4">({{exp.workTime}})</span></h3>
+            <p class="text-secondary fst-italic fs-5">{{exp.position}}</p>
+            <ul class="content-text">
+                <li *ngFor="let res of exp.responsibilities">
+                    <p>{{res}}</p>
+                </li>
+            </ul>
+            <div class="work-skills">
+                <p class="fs-5 fw-bold mb-1">Skills and tools used for the job</p>
+                <button class="btn btn-primary ms-auto me-2 mt-auto mb-1"
+                    *ngFor="let skill of exp.skills">{{skill}}</button>
+            </div>
+        </div>
+    </div>
+</div>

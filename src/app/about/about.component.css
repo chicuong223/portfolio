@@ -1,0 +1,26 @@
+#about-paragraph {
+    padding-left: 5%;
+}
+
+#about-card {
+    height: 100%;
+    overflow: auto;
+}
+
+#about-card>img {
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 1024px) {
+    #about-card {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-paragraph {
+        margin-top: 10%;
+        padding-left: 0;
+    }
+}
