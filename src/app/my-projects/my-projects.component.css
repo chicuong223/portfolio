@@ -28,20 +28,30 @@ td>button {
     pointer-events: none;
 }
 
+td>a:link {
+    color: blue;
+    padding: 0
+}
+
+td>a:visited {
+    color: purple;
+    padding: 0
+}
+
 @media (max-width: 1024px) {
     table {
         width: 100%;
     }
 
     th {
-        max-width: 50%;
+        max-width: 60%;
         padding-left: 1%;
         padding-right: 1em;
-        overflow: auto;
+        overflow: scroll;
     }
 
     td {
-        /* max-width: 20%; */
-        overflow: auto;
+        max-width: 20%;
+        overflow: scroll;
     }
 }

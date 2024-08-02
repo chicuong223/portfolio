@@ -4,7 +4,7 @@
         <div *ngFor="let pro of projects" class="mt-auto mb-5">
             <h4 class="text-success">{{pro.name}}</h4>
             <p class="text-secondary fst-italic fw-bold">({{pro.projectTime}})</p>
-            <table>
+            <table class="table table-responsive">
                 <tr>
                     <th>Description</th>
                     <td>{{pro.description}}</td>
@@ -23,7 +23,7 @@
                     <th>Tech stack</th>
                     <td>
                         <button *ngFor="let tech of pro.techStack"
-                            class="btn btn-primary ms-auto me-2 mt-auto mb-2">{{tech}}</button>
+                            class="btn btn-primary bg-primary text-white ms-auto me-2 mt-auto mb-2">{{tech}}</button>
                     </td>
                 </tr>
                 <tr *ngIf="pro.repositoryUrl">

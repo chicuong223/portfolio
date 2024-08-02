@@ -2,8 +2,8 @@
     <h1>Work Experiences</h1>
     <div id="experiences" class="mt-4">
         <div *ngFor="let exp of workExperiences" class="mb-4">
-            <h3 class="text-primary">{{exp.company}} <span class="text-dark fs-4">({{exp.workTime}})</span></h3>
-            <p class="text-secondary fst-italic fs-5">{{exp.position}}</p>
+            <h3 class="text-success">{{exp.company}} <span class="text-dark fs-4">({{exp.workTime}})</span></h3>
+            <p class="text-secondary fst-italic fw-medium fs-5">{{exp.position}}</p>
             <ul class="content-text">
                 <li *ngFor="let res of exp.responsibilities">
                     <p>{{res}}</p>
