@@ -45,7 +45,7 @@ export class MyProjectsComponent implements OnInit {
         documentUrl: '',
         repositoryUrl: '',
         responsibilities: [
-          'Designing the database schema, making sure that the data and constraints meet the project\' requirements',
+          'Designing the database schema, making sure that the data and constraints meet the project\' requirements.',
           'Developing the web API, ensuring efficient and secured data exchange between the web application, mobile application and database.'
         ],
         techStack: [
