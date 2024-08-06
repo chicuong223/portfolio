@@ -9,7 +9,11 @@
                     <th>Description</th>
                     <td>{{pro.description}}</td>
                 </tr>
-                <tr>
+                <tr *ngIf="pro.appWebsite">
+                    <th>App website</th>
+                    <td><a href="{{pro.appWebsite}}">{{pro.appWebsite}}</a></td>
+                </tr>
+                <tr *ngIf="pro.responsibilities.length > 0">
                     <th>My responsibilities</th>
                     <td>
                         <ul ngClass="'no-bullet': pro.responsibilities.length <= 1">
@@ -19,7 +23,7 @@
                         </ul>
                     </td>
                 </tr>
-                <tr>
+                <tr *ngIf="pro.techStack.length > 0">
                     <th>Tech stack</th>
                     <td>
                         <button *ngFor="let tech of pro.techStack"

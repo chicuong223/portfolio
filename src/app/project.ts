@@ -6,4 +6,5 @@ export interface Project {
     techStack: string[];
     repositoryUrl: string;
     documentUrl: string;
+    appWebsite: string;
 }
